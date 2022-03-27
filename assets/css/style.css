@@ -33,3 +33,28 @@
 .biglietto{
     background-color: white;
 }
+
+.ht{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-secondary{
+    color:white;
+    background-color: rgba(185, 20, 80, 1);
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.bianco{
+    color:white;
+}
+
