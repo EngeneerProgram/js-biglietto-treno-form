@@ -14,3 +14,22 @@
     background-color: red;
 }
 
+.background{
+    background-color: rgba(185, 20, 80, 1);
+}
+
+.form-control{
+    width: 60%;
+}
+
+
+.shadow{
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    
+}
+
+.biglietto{
+    background-color: white;
+}

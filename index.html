@@ -6,36 +6,57 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="container-fluid ">
-        <h2 class="text-center ">Calcola il prezzo del tuo biglietto</h2>
-        <div class="container pt-5 ">
+    <div class="container-fluid background pt-5 pb-5">
+        <h2 class="text-center pb-5">Calcola il prezzo del tuo biglietto</h2>
+        <div class="container shadow bg-light pt-5 ">
             <div class="row row-col-3">
-                <div class="col">
-                    <label for="validationCustom01" class="form-label fs-5">Nome Completo</label>
-                    <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="col d-flex align-items-center flex-column">
+                    <label for="validationCustom01" class="form-label  fs-5">Nome Completo</label>
+                    <input type="text" id="nome" class="form-control" id="validationCustom01" required>
                     
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center flex-column">
                     <label for="validationCustom01" class="form-label fs-5">Km da percorrere</label>
                     <input type="text" class="form-control" id="validationCustom01" required>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center flex-column">
                     <label for="validationCustom01" class="form-label fs-5">Fascia di età</label>
                     <input type="number" class="form-control" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row row-col-1 pt-5">
                 <div class="col text-end">
-                    <button type="button" class="btn btn-secondary  gx-5 sposta">Genera</button>
+                    <button type="button" id="mybutton" class="btn btn-secondary  gx-5 sposta">Genera</button>
                 </div>
                 <div class="col text-start">
                     <button type="button" class="btn btn-secondary gx-5 sposta">Annulla</button>
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            
+        <h2 class="text-center pt-5 pb-5">Il tuo biglietto</h2>
+        <div class="container biglietto pt-5">
+            <div class="row row-col-4">
+                <div class="col bg-secondary ">
+                    <h3>Nome <br> Passeggero</h3>
+                    <div class="pt-5 text-center text-uppercase" id="nome_passeggero"></div>
+                </div>
+                <div class="col">
+                    <h3>Offerta</h3>
+                    <div id="sconto"></div>
+                </div>
+                <div class="col">
+                    <h3>Carrozza</h3>
+                    <div id"carrozza"></div>
+                </div>
+                <div class="col">
+                    <h3>Codice CP</h3>
+                    <div id="codice"></div>
+                </div>
+                <div class="col">
+                    <h3>Costo biglietto</h3>
+                    <div id="costo"></div>
+                </div>
+            </div>
         </div>
 
     </div>
